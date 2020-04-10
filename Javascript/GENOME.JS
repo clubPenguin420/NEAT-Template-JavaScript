@@ -214,7 +214,7 @@ class Genome {
       this.connectNodes();
     }
     //-------------------------------------------------------------------------------------------------------------------------------------------
-  randomConnectionNodesAreShit(r1, r2) {
+  randomConnectionNodesAreShit(r1,) {
     if (this.nodes[r1].layer == this.nodes[r2].layer) return true; // if the this.nodes are in the same layer
     if (this.nodes[r1].isConnectedTo(this.nodes[r2])) return true; //if the this.nodes are already connected
 
